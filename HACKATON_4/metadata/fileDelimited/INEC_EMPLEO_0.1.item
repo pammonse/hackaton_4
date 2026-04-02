@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_TLAU4C6cEfGM681qSPqmTg" name="INEC_EMPLEO" dataPackage="_TLAU4S6cEfGM681qSPqmTg" Server="Localhost 127.0.0.1" FilePath="C:/Users/USUARIO/Downloads/hackaton 4/datasets/seleccionados/2. Tasas.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="3"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_TLAU4S6cEfGM681qSPqmTg" name="default" dataManager="_TLAU4C6cEfGM681qSPqmTg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_TLAU4i6cEfGM681qSPqmTg" id="_s4zlQC6bEfGM681qSPqmTg" label="inec_empleo">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TLAU4y6cEfGM681qSPqmTg" label="encuesta" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TLAU5C6cEfGM681qSPqmTg" label="periodo_texto" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TLAU5S6cEfGM681qSPqmTg" label="indicador" length="52" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_TLAU5i6cEfGM681qSPqmTg" label="valor_nacional_pct" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
