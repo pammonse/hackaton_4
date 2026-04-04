@@ -15,21 +15,6 @@
   } ]
 }, {
   "baseItem" : {
-    "id" : "_W6pr4C6bEfGM681qSPqmTg",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ {
-    "id" : "_1sLKcC6-EfGM681qSPqmTg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_1sLKcC6-EfGM681qSPqmTg - bce_reservas",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
-}, {
-  "baseItem" : {
     "id" : "_Z7g00C6bEfGM681qSPqmTg",
     "version" : "0.1",
     "type" : "job"
@@ -70,21 +55,6 @@
     "type" : "property"
   }, {
     "id" : "_Pkqp4C6oEfGM681qSPqmTg - inec_canasta",
-    "version" : "Latest",
-    "type" : "schema"
-  } ]
-}, {
-  "baseItem" : {
-    "id" : "_dfAAUC60EfGM681qSPqmTg",
-    "version" : "0.1",
-    "type" : "job"
-  },
-  "relatedItems" : [ {
-    "id" : "_KcTkwC6vEfGM681qSPqmTg",
-    "version" : "Latest",
-    "type" : "property"
-  }, {
-    "id" : "_KcTkwC6vEfGM681qSPqmTg - bce_balanza",
     "version" : "Latest",
     "type" : "schema"
   } ]

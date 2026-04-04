@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
-  <deletedItems id="_1sLKcC6-EfGM681qSPqmTg" path="" type="METADATA_FILE_EXCEL"/>
-  <deletedItems id="_MzlCgC7NEfGM681qSPqmTg" path="" type="METADATA_FILE_EXCEL"/>
-  <deletedItems id="_jWfOwC7NEfGM681qSPqmTg" path="" type="METADATA_FILE_EXCEL"/>
-  <deletedItems id="_W6pr4C6bEfGM681qSPqmTg" path="" type="PROCESS"/>
-  <deletedItems id="_dfAAUC60EfGM681qSPqmTg" path="" type="PROCESS"/>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin"/>
