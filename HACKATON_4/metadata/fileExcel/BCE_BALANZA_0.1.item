@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_KcTkwS6vEfGM681qSPqmTg" name="BCE_BALANZA" id="_KcTkwC6vEfGM681qSPqmTg" dataPackage="_KcTkwi6vEfGM681qSPqmTg" Server="Localhost 127.0.0.1" FilePath="C:/Users/USUARIO/Downloads/hackaton 4/datasets/seleccionados/IEM-323-e.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="16" FooterValue="0" UseLimit="true" LimitValue="25" SheetName="IEM-323-e" firstColumn="1" lastColumn="8" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="IEM-323-e:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+    <sheetColumns>Z</sheetColumns>
+    <sheetColumns>AA</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_KcTkwi6vEfGM681qSPqmTg" name="default" dataManager="_KcTkwS6vEfGM681qSPqmTg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KcTkwy6vEfGM681qSPqmTg" id="_DrBToC6uEfGM681qSPqmTg" label="bce_balanza">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrkC6yEfGM681qSPqmTg" label="periodo_texto" length="933" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrkS6yEfGM681qSPqmTg" label="exportaciones_fob_musd" length="19" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrki6yEfGM681qSPqmTg" label="C" length="31" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrky6yEfGM681qSPqmTg" label="D" length="34" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrlC6yEfGM681qSPqmTg" label="importaciones_fob_musd" length="37" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrlS6yEfGM681qSPqmTg" label="F" length="31" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrli6yEfGM681qSPqmTg" label="G" length="51" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__pBrly6yEfGM681qSPqmTg" label="balanza_comercial_musd" length="23" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

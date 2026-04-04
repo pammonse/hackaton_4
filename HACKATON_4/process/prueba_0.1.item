@@ -99,7 +99,7 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
-  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="120" posY="120">
+  <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputExcel_1" show="false"/>
     <elementParameter field="TEXT" name="COMPONENT_NAME" value="tFileInputExcel" show="false"/>
     <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
@@ -112,104 +112,74 @@
     <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
     <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="C:\Program Files (x86)\Talend-Studio\studio\configuration\lib\java" show="false"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_1sLKcC6-EfGM681qSPqmTg" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_KcTkwC6vEfGM681qSPqmTg" show="false"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/USUARIO/Downloads/hackaton 4/datasets/seleccionados/IEM-121-e.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:2F2JeTOeu+1+JdVAhAvLyL/V8Gm0XzT3+VpmyQqi"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/USUARIO/Downloads/hackaton 4/datasets/seleccionados/IEM-323-e.xlsx&quot;"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:I1qTLzGLLx8xzY47c5h7A1nVZTlYuSg039V6Q7Rm"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
     <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;IEM-121-e&quot;" id="0"/>
+      <elementValue elementRef="SHEETNAME" value="&quot;IEM-323-e&quot;" id="0"/>
       <elementValue elementRef="USE_REGEX" value="" id="1"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="HEADER" value="8"/>
+    <elementParameter field="TEXT" name="HEADER" value="16"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
-    <elementParameter field="TEXT" name="LIMIT" value="2"/>
+    <elementParameter field="TEXT" name="LIMIT" value="25"/>
     <elementParameter field="CHECK" name="AFFECT_EACH_SHEET" value="false"/>
     <elementParameter field="TEXT" name="FIRST_COLUMN" value="1"/>
-    <elementParameter field="TEXT" name="LAST_COLUMN" value=""/>
+    <elementParameter field="TEXT" name="LAST_COLUMN" value="8"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_1sLKcC6-EfGM681qSPqmTg - bce_reservas" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KcTkwC6vEfGM681qSPqmTg - bce_balanza" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_1sLKcC6-EfGM681qSPqmTg - bce_reservas" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_KcTkwC6vEfGM681qSPqmTg - bce_balanza" show="false"/>
     <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
     <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="','" show="false"/>
     <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="'.'" show="false"/>
     <elementParameter field="CHECK" name="TRIMALL" value="false"/>
     <elementParameter field="TABLE" name="TRIMSELECT">
-      <elementValue elementRef="SCHEMA_COLUMN" value="variable" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="periodo_texto" id="0"/>
       <elementValue elementRef="TRIM" value="false" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="feb_2025" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exportaciones_fob_musd" id="2"/>
       <elementValue elementRef="TRIM" value="false" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="mar_2025" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C" id="4"/>
       <elementValue elementRef="TRIM" value="false" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="abr_2025" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D" id="6"/>
       <elementValue elementRef="TRIM" value="false" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="may_2025" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="importaciones_fob_musd" id="8"/>
       <elementValue elementRef="TRIM" value="false" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jun_2025" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="F" id="10"/>
       <elementValue elementRef="TRIM" value="false" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jul_2025" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="G" id="12"/>
       <elementValue elementRef="TRIM" value="false" id="13"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ago_2025" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="balanza_comercial_musd" id="14"/>
       <elementValue elementRef="TRIM" value="false" id="15"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sep_2025" id="16"/>
-      <elementValue elementRef="TRIM" value="false" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="oct_2025" id="18"/>
-      <elementValue elementRef="TRIM" value="false" id="19"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nov_2025" id="20"/>
-      <elementValue elementRef="TRIM" value="false" id="21"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dic_2025" id="22"/>
-      <elementValue elementRef="TRIM" value="false" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ene_2026" id="24"/>
-      <elementValue elementRef="TRIM" value="false" id="25"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="feb_2026" id="26"/>
-      <elementValue elementRef="TRIM" value="false" id="27"/>
     </elementParameter>
     <elementParameter field="CHECK" name="CONVERTDATETOSTRING" value="false"/>
     <elementParameter field="TABLE" name="DATESELECT" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="variable" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="periodo_texto" id="0"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="1"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="2"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="feb_2025" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exportaciones_fob_musd" id="3"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="4"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="mar_2025" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="C" id="6"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="7"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="8"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="abr_2025" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="D" id="9"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="10"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="11"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="may_2025" id="12"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="importaciones_fob_musd" id="12"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="13"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="14"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jun_2025" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="F" id="15"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="16"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="17"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="jul_2025" id="18"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="G" id="18"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="19"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="20"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ago_2025" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="balanza_comercial_musd" id="21"/>
       <elementValue elementRef="CONVERTDATE" value="false" id="22"/>
       <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="23"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="sep_2025" id="24"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="25"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="26"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="oct_2025" id="27"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="28"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="29"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="nov_2025" id="30"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="31"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="32"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="dic_2025" id="33"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="34"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="35"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ene_2026" id="36"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="37"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="38"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="feb_2026" id="39"/>
-      <elementValue elementRef="CONVERTDATE" value="false" id="40"/>
-      <elementValue elementRef="PATTERN" value="&quot;MM-dd-yyyy&quot;" id="41"/>
     </elementParameter>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
@@ -222,47 +192,37 @@
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" value="true" show="false"/>
     <elementParameter field="CHECK" name="CONFIGURE_INFLATION_RATIO" value="false"/>
     <elementParameter field="TEXT" name="INFLATION_RATIO" value="" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="BCE_RESERVAS"/>
+    <elementParameter field="TEXT" name="LABEL" value="BCE_BALANZA"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="bce_reservas" name="tFileInputExcel_1">
-      <column comment="" key="false" length="967" name="variable" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="feb_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="mar_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="abr_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="may_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="jun_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="jul_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="ago_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="sep_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="17" name="oct_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="nov_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="dic_2025" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="ene_2026" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="18" name="feb_2026" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="bce_balanza" name="tFileInputExcel_1">
+      <column comment="" key="false" length="933" name="periodo_texto" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="exportaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="C" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="D" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="importaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="G" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="balanza_comercial_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="mes_anio" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="reservas_total_musd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="REJECT" label="bce_balanza" name="REJECT">
+      <column comment="" key="false" length="933" name="periodo_texto" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="exportaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="C" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="34" name="D" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="importaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="31" name="F" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="51" name="G" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="balanza_comercial_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="280" posY="120">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;String[][] meses = {&#xA;    {&quot;feb_2025&quot;, input_row.feb_2025},&#xA;    {&quot;mar_2025&quot;, input_row.mar_2025},&#xA;    {&quot;abr_2025&quot;, input_row.abr_2025},&#xA;    {&quot;may_2025&quot;, input_row.may_2025},&#xA;    {&quot;jun_2025&quot;, input_row.jun_2025},&#xA;    {&quot;jul_2025&quot;, input_row.jul_2025},&#xA;    {&quot;ago_2025&quot;, input_row.ago_2025},&#xA;    {&quot;sep_2025&quot;, input_row.sep_2025},&#xA;    {&quot;oct_2025&quot;, input_row.oct_2025},&#xA;    {&quot;nov_2025&quot;, input_row.nov_2025},&#xA;    {&quot;dic_2025&quot;, input_row.dic_2025},&#xA;    {&quot;ene_2026&quot;, input_row.ene_2026},&#xA;    {&quot;feb_2026&quot;, input_row.feb_2026}&#xA;};&#xA;&#xA;for(String[] par : meses) {&#xA;    output_row.mes_anio = par[0];&#xA;    output_row.reservas_total_musd = par[1];&#xA;}"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaRow_1">
-      <column comment="" key="false" length="-1" name="mes_anio" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="reservas_total_musd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="440" posY="120">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_W6pr4C6bEfGM681qSPqmTg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_dfAAUC60EfGM681qSPqmTg-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
@@ -272,35 +232,45 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="anio" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="mes_nombre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="933" name="periodo_texto" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="fecha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="reservas_total_musd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="fecha_etraccion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="exportaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="importaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="balanza_comercial_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fecha_extraccion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="periodo_carga" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var">
-        <mapperTableEntries name="anio" expression="row2.mes_anio.substring(4) " type="id_String"/>
-        <mapperTableEntries name="mes" expression="row2.mes_anio.substring(0,3).toLowerCase(); " type="id_String"/>
-        <mapperTableEntries name="num_mes" expression="&quot;01&quot;;&#xD;&#xA;if(Var.mes.equals(&quot;ene&quot;)) Var.num_mes=&quot;01&quot;;&#xA;else if(Var.mes.equals(&quot;feb&quot;)) Var.num_mes=&quot;02&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;mar&quot;)) Var.num_mes=&quot;03&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;abr&quot;)) Var.num_mes=&quot;04&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;may&quot;)) Var.num_mes=&quot;05&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;jun&quot;)) Var.num_mes=&quot;06&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;jul&quot;)) Var.num_mes=&quot;07&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;ago&quot;)) Var.num_mes=&quot;08&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;sep&quot;)) Var.num_mes=&quot;09&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;oct&quot;)) Var.num_mes=&quot;10&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;nov&quot;)) Var.num_mes=&quot;11&quot;;&#xD;&#xA;else if(Var.mes.equals(&quot;dic&quot;)) Var.num_mes=&quot;12&quot; " type="id_String"/>
+        <mapperTableEntries name="texto" expression="row1.periodo_texto == null ? &quot;&quot; : row1.periodo_texto.trim() " type="id_String"/>
+        <mapperTableEntries name="tieneAnio" expression="Var.texto.matches(&quot;\\d{4}\\s+.*&quot;) " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="anio_actual" expression="Var.tieneAnio &#xD;&#xA;? Var.texto.substring(0,4)&#xD;&#xA;: Var.anio_actual " type="id_String"/>
+        <mapperTableEntries name="mes_texto" expression="Var.tieneAnio&#xD;&#xA;? Var.texto.substring(5)&#xD;&#xA;: Var.texto " type="id_String"/>
+        <mapperTableEntries name="mes_num" expression="&quot;Enero&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;01&quot; :&#xD;&#xA;&quot;Febrero&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;02&quot; :&#xD;&#xA;&quot;Marzo&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;03&quot; :&#xD;&#xA;&quot;Abril&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;04&quot; :&#xD;&#xA;&quot;Mayo&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;05&quot; :&#xD;&#xA;&quot;Junio&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;06&quot; :&#xD;&#xA;&quot;Julio&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;07&quot; :&#xD;&#xA;&quot;Agosto&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;08&quot; :&#xD;&#xA;&quot;Septiembre&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;09&quot; :&#xD;&#xA;&quot;Octubre&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;10&quot; :&#xD;&#xA;&quot;Noviembre&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;11&quot; :&#xD;&#xA;&quot;Diciembre&quot;.equalsIgnoreCase(Var.mes_texto) ? &quot;12&quot; :&#xD;&#xA;&quot;01&quot; " type="id_String"/>
       </varTables>
       <outputTables sizeState="INTERMEDIATE" name="out1">
-        <mapperTableEntries name="anio" expression="Var.anio " type="id_String" nullable="true"/>
-        <mapperTableEntries name="mes_nombre" expression="&quot;ene&quot;.equalsIgnoreCase(Var.mes) ? &quot;Enero&quot; :&#xD;&#xA;&quot;feb&quot;.equalsIgnoreCase(Var.mes) ? &quot;Febrero&quot; :&#xD;&#xA;&quot;mar&quot;.equalsIgnoreCase(Var.mes) ? &quot;Marzo&quot; :&#xD;&#xA;&quot;abr&quot;.equalsIgnoreCase(Var.mes) ? &quot;Abril&quot; :&#xD;&#xA;&quot;may&quot;.equalsIgnoreCase(Var.mes) ? &quot;Mayo&quot; :&#xD;&#xA;&quot;jun&quot;.equalsIgnoreCase(Var.mes) ? &quot;Junio&quot; :&#xD;&#xA;&quot;jul&quot;.equalsIgnoreCase(Var.mes) ? &quot;Julio&quot; :&#xD;&#xA;&quot;aug&quot;.equalsIgnoreCase(Var.mes) ? &quot;Agosto&quot; :&#xD;&#xA;&quot;sep&quot;.equalsIgnoreCase(Var.mes) ? &quot;Septiembre&quot; :&#xD;&#xA;&quot;oct&quot;.equalsIgnoreCase(Var.mes) ? &quot;Octubre&quot; :&#xD;&#xA;&quot;nov&quot;.equalsIgnoreCase(Var.mes) ? &quot;Noviembre&quot; :&#xD;&#xA;&quot;dic&quot;.equalsIgnoreCase(Var.mes) ? &quot;Diciembre&quot; :&#xD;&#xA;null " type="id_String" nullable="true"/>
-        <mapperTableEntries name="fecha" expression="Var.anio + &quot;-&quot; + Var.num_mes + &quot;-01&quot; " type="id_String" nullable="true"/>
-        <mapperTableEntries name="reservas_total_musd" expression="row2.reservas_total_musd " type="id_String" nullable="true"/>
-        <mapperTableEntries name="fecha_etraccion" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getCurrentDate()) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="periodo_texto" expression="row1.periodo_texto " type="id_String" nullable="true"/>
+        <mapperTableEntries name="fecha" expression="Var.anio_actual + &quot;-&quot; + Var.mes_num + &quot;-01&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="exportaciones_fob_musd" expression="row1.exportaciones_fob_musd.replace(&quot;,&quot;, &quot;.&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="importaciones_fob_musd" expression="row1.importaciones_fob_musd.replace(&quot;,&quot;, &quot;.&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="balanza_comercial_musd" expression="row1.balanza_comercial_musd.replace(&quot;,&quot;, &quot;.&quot;) " type="id_String" nullable="true"/>
+        <mapperTableEntries name="fecha_extraccion" expression="TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getCurrentDate()) " type="id_String" nullable="true"/>
         <mapperTableEntries name="periodo_carga" expression="TalendDate.formatDate(&quot;yyyy-MM&quot;, TalendDate.getCurrentDate()) " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="mes_anio" type="id_String" nullable="true"/>
-        <mapperTableEntries name="reservas_total_musd" type="id_String" nullable="true"/>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="periodo_texto" type="id_String" nullable="true"/>
+        <mapperTableEntries name="exportaciones_fob_musd" type="id_String" nullable="true"/>
+        <mapperTableEntries name="C" type="id_String" nullable="true"/>
+        <mapperTableEntries name="D" type="id_String" nullable="true"/>
+        <mapperTableEntries name="importaciones_fob_musd" type="id_String" nullable="true"/>
+        <mapperTableEntries name="F" type="id_String" nullable="true"/>
+        <mapperTableEntries name="G" type="id_String" nullable="true"/>
+        <mapperTableEntries name="balanza_comercial_musd" type="id_String" nullable="true"/>
       </inputTables>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="120">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="440" posY="120">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
@@ -314,38 +284,37 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="anio" id="0"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="periodo_texto" id="0"/>
       <elementValue elementRef="LENGTH" value="10" id="1"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="mes_nombre" id="2"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fecha" id="2"/>
       <elementValue elementRef="LENGTH" value="10" id="3"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="fecha" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="exportaciones_fob_musd" id="4"/>
       <elementValue elementRef="LENGTH" value="10" id="5"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="reservas_total_musd" id="6"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="importaciones_fob_musd" id="6"/>
       <elementValue elementRef="LENGTH" value="10" id="7"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="fecha_etraccion" id="8"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="balanza_comercial_musd" id="8"/>
       <elementValue elementRef="LENGTH" value="10" id="9"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="periodo_carga" id="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="fecha_extraccion" id="10"/>
       <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="periodo_carga" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tLogRow_1">
-      <column comment="" key="false" length="-1" name="anio" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="mes_nombre" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="933" name="periodo_texto" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="fecha" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="reservas_total_musd" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="fecha_etraccion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="exportaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="37" name="importaciones_fob_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="23" name="balanza_comercial_musd" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="fecha_extraccion" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="periodo_carga" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tJavaRow_1">
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputExcel_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputExcel_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
-  </connection>
-  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
   </connection>
   <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
