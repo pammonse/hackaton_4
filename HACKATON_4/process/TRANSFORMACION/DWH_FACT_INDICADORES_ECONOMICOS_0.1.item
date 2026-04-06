@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
-  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <context confirmationNeeded="false" hide="false" name="Default">
+    <contextParameter comment="" name="periodo_proceso" prompt="periodo_proceso?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="``" internalId="_HmTCUDFfEfGLGOaJQJ7zyw"/>
+  </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -97,4 +101,38 @@
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
   </parameters>
+  <node componentName="tBigQueryInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="bigquery_id" show="false"/>
+    <elementParameter field="DYNAMIC_GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_MODE" value="APPLICATION_DEFAULT_CREDENTIALS"/>
+    <elementParameter field="PASSWORD" name="ACCESS_TOKEN" value="enc:system.encryption.key.v1:O86QsIouAkGAkZXzrdgYedoKFbU+dw0TyQ1qbHXy" show="false"/>
+    <elementParameter field="LABEL" name="ACCESS_TOKEN_WARNING" value="*Note: If the Access Token Expire we won't be able to refresh it!&quot;" show="false"/>
+    <elementParameter field="FILE" name="SERVICE_ACCOUNT_CREDENTIALS_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="CLIENT_ID" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="CLIENT_SECRET" value="enc:system.encryption.key.v1:opXPD3OV3YAby33CcY8+DU2FHDvnfTwt7VQkpObT" show="false"/>
+    <elementParameter field="TEXT" name="PROJECT_ID" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="AUTHORIZATION_CODE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="USE_LEGACY_SQL" value="true"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;  CAST(ROW_NUMBER() OVER (ORDER BY t.fecha, p.id_pais, i.id_indicador) AS STRING) as id_hecho,&#xD;&#xA;  t.id_tiempo,&#xD;&#xA;  p.id_pais,&#xD;&#xA;  i.id_indicador,&#xD;&#xA;  f.id_fuente,&#xD;&#xA;  datos.valor,&#xD;&#xA;  NULL as valor_anterior,&#xD;&#xA;  NULL as variacion_pct,&#xD;&#xA;  datos.es_provisional,&#xD;&#xA;  '&quot; + TalendDate.formatDate(&quot;yyyy-MM-dd HH:mm:ss&quot;, TalendDate.getCurrentDate()) + &quot;' as fecha_carga&#xD;&#xA;FROM (&#xD;&#xA;&#xD;&#xA;  -- World Bank&#xD;&#xA;  SELECT&#xD;&#xA;    CONCAT(anio, '-01-01') as fecha_join,&#xD;&#xA;    pais_codigo as iso2,&#xD;&#xA;    indicador_codigo as cod_indicador,&#xD;&#xA;    'WB' as sigla_fuente,&#xD;&#xA;    valor,&#xD;&#xA;    es_nulo_origen as es_provisional&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_worldbank`&#xD;&#xA;  WHERE valor IS NOT NULL AND valor != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  -- BCE IPC indice&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_IPC_INDICE', 'BCE', ipc_indice, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_ipc`&#xD;&#xA;  WHERE ipc_indice IS NOT NULL AND ipc_indice != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_IPC_VAR_ANUAL', 'BCE', variacion_anual_pct, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_ipc`&#xD;&#xA;  WHERE variacion_anual_pct IS NOT NULL AND variacion_anual_pct != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_IPC_VAR_MENSUAL', 'BCE', variacion_mensual_pct, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_ipc`&#xD;&#xA;  WHERE variacion_mensual_pct IS NOT NULL AND variacion_mensual_pct != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  -- BCE Balanza&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_EXPORTACIONES', 'BCE', exportaciones_fob_musd, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_balanza`&#xD;&#xA;  WHERE exportaciones_fob_musd IS NOT NULL AND exportaciones_fob_musd != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_IMPORTACIONES', 'BCE', importaciones_fob_musd, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_balanza`&#xD;&#xA;  WHERE importaciones_fob_musd IS NOT NULL AND importaciones_fob_musd != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_BALANZA', 'BCE', balanza_comercial_musd, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_balanza`&#xD;&#xA;  WHERE balanza_comercial_musd IS NOT NULL AND balanza_comercial_musd != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  -- BCE Tasas&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_TASA_CORPORATIVO', 'BCE', tasa_activa_corporativo_pct, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_tasas`&#xD;&#xA;  WHERE tasa_activa_corporativo_pct IS NOT NULL AND tasa_activa_corporativo_pct != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'BCE_TASA_CONSUMO', 'BCE', tasa_consumo_pct, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_bce_tasas`&#xD;&#xA;  WHERE tasa_consumo_pct IS NOT NULL AND tasa_consumo_pct != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  -- INEC Empleo&#xD;&#xA;  SELECT fecha, 'EC',&#xD;&#xA;    CASE indicador&#xD;&#xA;      WHEN 'Empleo Adecuado/Pleno (%)' THEN 'INEC_EMPLEO_ADECUADO'&#xD;&#xA;      WHEN 'Subempleo (%)' THEN 'INEC_SUBEMPLEO'&#xD;&#xA;      WHEN 'Desempleo (%)' THEN 'INEC_DESEMPLEO'&#xD;&#xA;      WHEN 'Participación Global (%)' THEN 'INEC_PARTICIPACION'&#xD;&#xA;    END,&#xD;&#xA;    'INEC', valor_nacional_pct, cambio_metodologico&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_inec_empleo`&#xD;&#xA;  WHERE fecha >= '2020-01-01'&#xD;&#xA;  AND indicador IN ('Empleo Adecuado/Pleno (%)','Subempleo (%)','Desempleo (%)','Participación Global (%)')&#xD;&#xA;  AND valor_nacional_pct IS NOT NULL AND valor_nacional_pct != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  -- INEC Canasta&#xD;&#xA;  SELECT fecha, 'EC', 'INEC_COSTO_CANASTA', 'INEC', costo_canasta_usd, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_inec_canasta`&#xD;&#xA;  WHERE fecha >= '2020-01-01'&#xD;&#xA;  AND costo_canasta_usd IS NOT NULL AND costo_canasta_usd != ''&#xD;&#xA;&#xD;&#xA;  UNION ALL&#xD;&#xA;&#xD;&#xA;  SELECT fecha, 'EC', 'INEC_INGRESO_FAMILIAR', 'INEC', ingreso_familiar_usd, 'false'&#xD;&#xA;  FROM `project-aa284588-b856-4049-937.dsa_ecuador.stg_inec_canasta`&#xD;&#xA;  WHERE fecha >= '2020-01-01'&#xD;&#xA;  AND ingreso_familiar_usd IS NOT NULL AND ingreso_familiar_usd != ''&#xD;&#xA;&#xD;&#xA;) datos&#xD;&#xA;JOIN `project-aa284588-b856-4049-937.dwh_ecuador.dim_tiempo` t&#xD;&#xA;  ON t.fecha = datos.fecha_join&#xD;&#xA;JOIN `project-aa284588-b856-4049-937.dwh_ecuador.dim_pais` p&#xD;&#xA;  ON p.codigo_iso2 = datos.iso2&#xD;&#xA;JOIN `project-aa284588-b856-4049-937.dwh_ecuador.dim_indicador` i&#xD;&#xA;  ON i.codigo_indicador = datos.cod_indicador&#xD;&#xA;JOIN `project-aa284588-b856-4049-937.dwh_ecuador.dim_fuente` f&#xD;&#xA;  ON f.sigla = datos.sigla_fuente&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="RESULT_SIZE" value="SMALL"/>
+    <elementParameter field="CHECK" name="USE_REGION_ENDPOINT" value="false"/>
+    <elementParameter field="TEXT" name="REGION_ENDPOINT_BQ" value="&quot;https://bigquery.googleapis.com&quot;" show="false"/>
+    <elementParameter field="FILE" name="TOKEN_NAME" value="&quot;C:/Program Files (x86)/Talend-Studio/studio/workspace/token.properties&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CUSTOM_TEMPORARY_DATASET" value="false" show="false"/>
+    <elementParameter field="TEXT" name="TEMPORARY_DATASET_NAME" value="&quot;temp_dataset&quot;" show="false"/>
+    <elementParameter field="CHECK" name="FORCE_SINGLE_QUERY_EXEC" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tBigQueryInput_1"/>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBigQueryInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
 </talendfile:ProcessType>
