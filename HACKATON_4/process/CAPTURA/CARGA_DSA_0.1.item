@@ -336,7 +336,7 @@
         <mapperTableEntries name="id_error" expression="TalendString.getAsciiRandomString(10) " type="id_String" nullable="true"/>
         <mapperTableEntries name="job_run_id" expression="&quot;job_carga_dsa_&quot; + TalendDate.formatDate(&quot;yyyyMM&quot;, TalendDate.getCurrentDate()) " type="id_String" nullable="true"/>
         <mapperTableEntries name="proceso" expression="row2.origin " type="id_String" nullable="true"/>
-        <mapperTableEntries name="capa" expression="&quot;DWH&quot; " type="id_String" nullable="true"/>
+        <mapperTableEntries name="capa" expression="&quot;DSA&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="tabla" expression="&quot;carga_dsa&quot; " type="id_String" nullable="true"/>
         <mapperTableEntries name="nivel" expression="row2.type " type="id_String" nullable="true"/>
         <mapperTableEntries name="descripcion_error" expression="row2.message " type="id_String" nullable="true"/>
